@@ -11,4 +11,12 @@ printIterable(["a", "b", "c"]);
 // Called with an object:
 $iterator = new ArrayIterator(["d", "e", "f"]);
 printIterable($iterator);
+
+function getIterable():iterable {
+  return ["a", "b", "c"];
+}
+
+foreach(getIterable() as $item) {
+  echo $item;
+}
 ?>
